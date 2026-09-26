@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <form action="" method="get">
+
+        <p>Datos personales</p>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required maxlength="100" minlength="1" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]+" title="Solo se permiten letras y espacios." placeholder="Escribe tu nombre">
+        <br>
+        <label for="ap_paterno">Ap_paterno:</label>
+        <input type="text" name="ap_paterno" id="ap_paterno" required maxlength="100" minlength="1" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]+" title="Solo se permiten letras y espacios." placeholder="Escribe tu ap_paterno">
+        <br>
+        <label for="ap_materno">Ap_materno:</label>
+        <input type="text" name="ap_materno" id="ap_materno" required maxlength="100" minlength="1" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]+" title="Solo se permiten letras y espacios." placeholder="Escribe tu ap_materno">
+        <br>
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" id="edad" required min="1" max="100" step="1" title="La edad debe estar entre 15 y 99 años." placeholder="Ej. 20">
+        <br>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" name="correo" id="correo" required maxlength="60" minlength="1" title="Ingresa un correo válido, ej. usuario@alumnos.udg.mx" placeholder="usuario@alumnos.udg.mx">
+        <br>
+        <label for="f_nacimiento">Fecha de nacimiento:</label>
+        <input type="date" name="f_nacimiento" id="f_nacimiento" required min="1900-01-01" max="2010-12-31" title="La fecha debe estar entre 1900 y 2010.">
+        <br>
+
+        <p>Información académica</p>
+
+        <label for="Lic">Seleccionar</label>
+        <select name="Lic" id="Lic" required>
+            <option value="" disabled selected>-- Selecciona una carrera --</option>
+            <option value="Lic_Ad">Licenciatura en Administración</option>
+            <option value="Lic_Ad_Fin_Sis">Licenciatura en Administración Financiera y Sistemas</option>
+            <option value="Lic_Ad_Gub_Pol">Licenciatura en Administración Gubernamental y Políticas Públicas</option>
+            <option value="Lic_Con_Pub">Licenciatura en Contaduría Pública</option>
+            <option value="Lic_Eco">Licenciatura en Economía</option>
+            <option value="Lic_Gest_Neg_Gas">Licenciatura en Gestión de Negocios Gastronómicos</option>
+            <option value="Lic_Gest_Eco_Amb">Licenciatura en Gestión y Economía Ambiental</option>
+            <option value="Lic_Ing_Neg">Licenciatura en Ingeniería en Negocios</option>
+            <option value="Lic_Merc">Licenciatura en Mercadotecnia</option>
+            <option value="Lic_Merc_Dig">Licenciatura en Mercadotecnia Digital</option>
+            <option value="Lic_Neg_Int">Licenciatura en Negocios Internacionales</option>
+            <option value="Lic_RH">Licenciatura en Recursos Humanos</option>
+            <option value="Lic_Rel_Pub_Com">Licenciatura en Relaciones Públicas y Comunicación</option>
+            <option value="Lic_Tec_Inf">Licenciatura en Tecnologías de la Información</option>
+            <option value="Lic_Tur">Licenciatura en Turismo</option>
+        </select>
+        <br>
+
+        <p>Turno de asistencia:</p>
+
+        <label for="T_Mat">Matutino</label>
+        <input type="radio" name="turno" id="T_Mat" value="matutino" required>
+        <label for="T_Ves">Vespertino</label>
+        <input type="radio" name="turno" id="T_Ves" value="vespertino">
+        <br>
+
+        <p><strong>Términos y condiciones</strong></p>
+
+        <label for="Ter_Cod">Acepto los términos y condiciones</label>
+        <input type="checkbox" name="Ter_Cod" id="Ter_Cod" required>
+        <br>
+
+        <p>
+            <button type="submit">Enviar registro</button>
+            <button type="reset">Limpiar formulario</button>
+        </p>
+
+    </form>
+
+</body>
+</html>
